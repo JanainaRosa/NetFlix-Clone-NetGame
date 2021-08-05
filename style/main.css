@@ -1,0 +1,178 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+/* elementos base*/
+body{
+background-color: var(--preto);
+font-family:'times new Roman', Times, serif;
+color:white;
+text-shadow: black 2px 2px 2px;
+
+}
+
+
+header .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+  
+ 
+   
+}
+
+section{
+
+margin-top: -27pt;
+margin-left: 250pt;
+font-size: 25px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:#D3D3D3;
+
+}
+
+/* não funcionou essa mudança de cor ao passar o mouse ;(*/
+section .resultado:hover{
+ color:tomato
+
+}
+
+
+
+header .logos{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    text-shadow: black 2px 2px 2px;
+   
+
+}
+header nav a{
+    text-decoration: none;
+    color: rgb(236, 224, 48);
+    font-size: 20px;
+    margin-right: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+
+}
+header nav a:hover{
+
+    color: rgb(163, 83, 8);
+    
+}
+
+/* filme principal*/
+
+.filme-principal{
+    font-size: 20px;
+   /* background: linear-gradient(rgba(0,0,0.50), rgba(0,0,0,.50)100%), video('../video/Call\ of\ Duty®_\ Warzone\ -\ Official\ Trailer.mp4');
+*/
+    height:400px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.filme-principal .descricao{
+
+    margin-top: 10px;
+    margin-bottom: 50px;
+   
+
+}
+
+.filme-principal .titulop{
+    margin-top: 7%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.botao{
+    background-color:rgba(0,0,0,.50) ;
+    border:none;
+    color: white;
+
+
+    padding: 20px 30px 30px 20px;
+    margin-right:  10px;
+    font-size: 11px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+  
+  
+}
+    
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 23px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:58px;
+}
+
+
+/* quando tento redefinir a estrutura de exibição não consigo pois desconfigura e ai ele o "video" fica na frente dos logos, paragrafos e outras informações 
+do documento, se analizarmos o video ele está cortando boa parte da exibição, (minha tentativa era diminuir o tamanho de cima e de baixo encaixando
+o video perfeitamente no container)e gostaria de ter feito tambem um efeito background da esquerda para direita assim facilitaria a leitura da descrição
+mas colocando a sombra nas letras tornou o texto mais legivel */
+video{
+
+    position: fixed; 
+   	right: 0; 
+	bottom: 9%;
+	min-width: 100%; 
+	min-height: 0%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(../img/img/warzone\ 1.jpg) no-repeat;
+	background-size: cover; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
